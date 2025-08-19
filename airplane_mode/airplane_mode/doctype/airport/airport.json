@@ -1,59 +1,57 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "prompt",
- "creation": "2025-08-08 12:27:30.323305",
+ "creation": "2025-08-18 12:27:14.734347",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "founding_year",
-  "headquarters",
-  "column_break_mpjf",
-  "customer_care_number"
+  "code",
+  "column_break_qsbo",
+  "city",
+  "country"
  ],
  "fields": [
   {
-   "fieldname": "founding_year",
-   "fieldtype": "Int",
+   "fieldname": "code",
+   "fieldtype": "Data",
    "ignore_xss_filter": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Founding Year",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "column_break_mpjf",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "customer_care_number",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Customer Care Number",
+   "label": "Code",
    "reqd": 1
   },
   {
-   "fieldname": "headquarters",
+   "fieldname": "column_break_qsbo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "city",
    "fieldtype": "Data",
+   "ignore_xss_filter": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Headquarters",
+   "label": "City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "ignore_xss_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Country",
    "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [
-  {
-   "link_doctype": "Airplane",
-   "link_fieldname": "airline"
-  }
- ],
- "modified": "2025-08-18 23:00:19.356188",
+ "links": [],
+ "modified": "2025-08-18 12:42:38.233592",
  "modified_by": "Administrator",
  "module": "airplane_mode",
- "name": "Airline",
+ "name": "Airport",
  "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
