@@ -1,5 +1,11 @@
 {
- "actions": [],
+ "actions": [
+  {
+   "action": "airplane_mode.airplane_mode.api.custom_api.execute_func",
+   "action_type": "Server Action",
+   "label": "execute"
+  }
+ ],
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "autoincrement",
@@ -60,7 +66,7 @@
    "link_fieldname": "passenger"
   }
  ],
- "modified": "2025-08-18 23:04:33.962036",
+ "modified": "2025-08-30 15:34:00.714871",
  "modified_by": "Administrator",
  "module": "airplane_mode",
  "name": "Flight Passenger",

@@ -1,6 +1,10 @@
 [pre_model_sync]
 # Patches added in this section will be executed before doctypes are migrated
 # Read docs to understand patches: https://frappeframework.com/docs/v14/user/en/database-migrations
+airplane_mode.airplane_mode.doctype.airplane.patches.update_data
 
 [post_model_sync]
 # Patches added in this section will be executed after doctypes are migrated
+airplane_mode.airplane_mode.doctype.airplane.patches.set_data
+airplane_mode.airplane_mode.doctype.airplane.patches.set_route
+airplane_mode.airplane_mode.doctype.airplane.patches.set_base_route

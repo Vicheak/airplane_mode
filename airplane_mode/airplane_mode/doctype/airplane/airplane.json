@@ -1,5 +1,12 @@
 {
- "actions": [],
+ "actions": [
+  {
+   "action": "airplane/new",
+   "action_type": "Route",
+   "label": "Create New"
+  }
+ ],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "creation": "2025-08-12 00:13:32.907528",
  "doctype": "DocType",
@@ -8,7 +15,10 @@
   "model",
   "column_break_fowj",
   "airline",
-  "capacity"
+  "capacity",
+  "web_view_section",
+  "route",
+  "published"
  ],
  "fields": [
   {
@@ -42,12 +52,31 @@
    "label": "Capacity",
    "non_negative": 1,
    "reqd": 1
+  },
+  {
+   "fieldname": "web_view_section",
+   "fieldtype": "Section Break",
+   "label": "Web View"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
   }
  ],
  "grid_page_length": 50,
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "published",
  "links": [],
- "modified": "2025-08-15 22:29:00.538443",
+ "modified": "2025-08-30 15:48:47.665123",
  "modified_by": "Administrator",
  "module": "airplane_mode",
  "name": "Airplane",
@@ -67,8 +96,11 @@
    "write": 1
   }
  ],
+ "route": "airplanes",
  "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_seen": 1,
+ "track_views": 1
 }
