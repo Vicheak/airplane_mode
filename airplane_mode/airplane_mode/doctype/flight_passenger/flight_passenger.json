@@ -4,6 +4,16 @@
    "action": "airplane_mode.airplane_mode.api.custom_api.execute_func",
    "action_type": "Server Action",
    "label": "execute"
+  },
+  {
+   "action": "airplane_mode.airplane_mode.api.custom_api.execute_realtime",
+   "action_type": "Server Action",
+   "label": "realtime"
+  },
+  {
+   "action": "airplane_mode.airplane_mode.api.custom_api.execute_cronjob",
+   "action_type": "Server Action",
+   "label": "cronjob"
   }
  ],
  "allow_import": 1,
@@ -66,7 +76,7 @@
    "link_fieldname": "passenger"
   }
  ],
- "modified": "2025-08-30 15:34:00.714871",
+ "modified": "2025-10-07 22:10:31.813239",
  "modified_by": "Administrator",
  "module": "airplane_mode",
  "name": "Flight Passenger",

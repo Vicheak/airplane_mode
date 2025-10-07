@@ -36,3 +36,11 @@ class Airplane(WebsiteGenerator):
 		# if not self.route:
 		# 	self.route = f"airplanes/{self.name}"
 		self.route = f"airplanes/{self.name}"
+
+	def do_something(self, param=None):
+		print(f"executing do_something for {self.name} with param={param}")
+		import time
+		time.sleep(5)
+		print("="*20)
+		print("Task completed")
+		print("="*20)
