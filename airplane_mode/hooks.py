@@ -160,6 +160,11 @@ app_license = "mit"
 # 		"airplane_mode.tasks.monthly"
 # 	],
 # }
+scheduler_events = {
+	"all": [
+		"airplane_mode.api.cron.schedule.alert_job"
+	]
+}
 
 # Testing
 # -------

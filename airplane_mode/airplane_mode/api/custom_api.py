@@ -25,9 +25,9 @@ def execute_realtime(*args, **kwargs):
 
 # test with background job
 def long_running_job(param1, param2):
-    print("="*20)
-    print("executing long_running_job")
-    print("="*20)
+	print("="*20)
+	print("executing long_running_job")
+	print("="*20)
 
 @frappe.whitelist()
 def execute_cronjob():
@@ -36,12 +36,15 @@ def execute_cronjob():
 	# frappe.enqueue(long_running_job, queue="short", param1="param1", param2="param2")
 	# frappe.enqueue("airplane_mode.airplane_mode.api.cron.schedule.long_running_job", queue="long", param1="param1", param2="param2")
 
-	airplane_doc = frappe.get_doc("Airplane", "Airline1-001")
-	frappe.enqueue_doc(
-		doctype="Airplane",
-		name=airplane_doc.name,
-		method="do_something",
-		queue="long",
-		timeout=1500,
-		param="param"
-	)
+	# airplane_doc = frappe.get_doc("Airplane", "Airline1-001")
+	# frappe.enqueue_doc(
+	# 	doctype="Airplane",
+	# 	name=airplane_doc.name,
+	# 	method="do_something",
+	# 	queue="long",
+	# 	timeout=1500,
+	# 	param="param"
+	# )
+
+	# test with custom queue
+	frappe.enqueue(long_running_job, queue="custom_queue", param1="param1", param2="param2")
