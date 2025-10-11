@@ -161,9 +161,11 @@ app_license = "mit"
 # 	],
 # }
 scheduler_events = {
-	"all": [
-		"airplane_mode.api.cron.schedule.alert_job"
-	]
+	# "cron": {
+	# 	"* * * * *": [ # every minute
+	# 		"airplane_mode.airplane_mode.api.cron.schedule.hook_job"
+	# 	]
+	# }
 }
 
 # Testing

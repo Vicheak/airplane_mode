@@ -1,7 +1,6 @@
 import frappe
 import time
 
-
 @frappe.whitelist()
 def execute_func(*args, **kwargs):
 	print("executing func!")

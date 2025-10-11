@@ -14,6 +14,11 @@
    "action": "airplane_mode.airplane_mode.api.custom_api.execute_cronjob",
    "action_type": "Server Action",
    "label": "cronjob"
+  },
+  {
+   "action": "airplane_mode.airplane_mode.api.cron.schedule.custom_schedule_event",
+   "action_type": "Server Action",
+   "label": "scheduler event"
   }
  ],
  "allow_import": 1,
@@ -76,7 +81,7 @@
    "link_fieldname": "passenger"
   }
  ],
- "modified": "2025-10-07 22:10:31.813239",
+ "modified": "2025-10-11 12:57:55.065658",
  "modified_by": "Administrator",
  "module": "airplane_mode",
  "name": "Flight Passenger",
