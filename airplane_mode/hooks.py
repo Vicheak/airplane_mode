@@ -244,3 +244,18 @@ scheduler_events = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+# Testing
+# --------------------------------
+test_string = "value"
+test_list = ["value"]
+test_dict = {
+    "key": "value"
+}
+
+
+# Website route rules
+# --------------------------------
+website_route_rules = [
+    {"from_route": "/airports/<name>", "to_route": "app/airports/airport"},
+]
