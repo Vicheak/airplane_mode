@@ -259,3 +259,7 @@ test_dict = {
 website_route_rules = [
     {"from_route": "/airports/<name>", "to_route": "app/airports/airport"},
 ]
+
+
+# Website 404
+website_catch_all = "not_found"
