@@ -29,6 +29,7 @@
   {
    "fieldname": "customer_care_number",
    "fieldtype": "Data",
+   "ignore_xss_filter": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Customer Care Number",
@@ -37,6 +38,7 @@
   {
    "fieldname": "headquarters",
    "fieldtype": "Data",
+   "ignore_xss_filter": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Headquarters",
@@ -46,7 +48,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-10-07 20:36:06.864828",
+ "modified": "2026-08-04 20:18:29.430949",
  "modified_by": "Administrator",
  "module": "airplane_mode",
  "name": "Airline",

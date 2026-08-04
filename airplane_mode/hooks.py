@@ -1,5 +1,5 @@
 app_name = "airplane_mode"
-app_title = "airplane_mode"
+app_title = "Airplane Mode"
 app_publisher = "suonvicheak"
 app_description = "Airplane mode app for Flight Ticket System"
 app_email = "suonvicheak991@gmail.com"

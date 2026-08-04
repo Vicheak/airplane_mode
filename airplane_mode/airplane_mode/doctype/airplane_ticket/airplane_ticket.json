@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "creation": "2025-08-18 21:15:36.675777",
  "doctype": "DocType",
@@ -126,6 +127,7 @@
    "fieldtype": "Section Break"
   },
   {
+   "allow_on_submit": 1,
    "default": "Booked",
    "fieldname": "status",
    "fieldtype": "Select",
@@ -138,7 +140,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-18 22:56:50.304457",
+ "modified": "2026-08-04 21:46:43.732229",
  "modified_by": "Administrator",
  "module": "airplane_mode",
  "name": "Airplane Ticket",

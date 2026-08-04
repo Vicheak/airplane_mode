@@ -7,6 +7,8 @@ from frappe.model.naming import make_autoname
 
 class Airplane(WebsiteGenerator):
 	def autoname(self):
+		# print("executing autoname for Airplane")
+
 		# get linked airline name from the linked field
 		airline_doc = frappe.get_doc("Airline", self.airline)
 		airline_name = airline_doc.name.replace(" ", "")
@@ -18,6 +20,7 @@ class Airplane(WebsiteGenerator):
 		self.name = make_autoname(series)
 
 	def before_save(self):
+		# print("executing before_save for Airplane")
 		self.set_route()
 
 	def before_insert(self):

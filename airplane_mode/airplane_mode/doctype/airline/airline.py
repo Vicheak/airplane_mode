@@ -7,10 +7,12 @@ from frappe import _
 
 class Airline(Document):
 	def on_change(self):
+		# print("exeucting on_change for Airline")
 		# self.send_alert_airline()
 		pass
 
 	def before_validate(self):
+		# print("executing before_validate for Airline")
 		# self.send_alert_airline()
 		# if self.founding_year < 2000:
 		# 	frappe.throw(
@@ -20,6 +22,7 @@ class Airline(Document):
 		pass
 
 	def before_save(self):
+		# print("executing before_save for Airline")
 		# self.send_alert_airline()
 		pass
 
