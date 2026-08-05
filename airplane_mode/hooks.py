@@ -120,25 +120,31 @@ app_license = "mit"
 # -----------
 # Permissions evaluated in scripted ways
 
-# permission_query_conditions = {
-# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
-# }
-#
-# has_permission = {
-# 	"Event": "frappe.desk.doctype.event.event.has_permission",
-# }
+permission_query_conditions = {
+	# "Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
+    "Airline": "airplane_mode.airplane_mode.doctype.airline.permission.airline_perm.airline_query",
+}
+
+has_permission = {
+	# "Event": "frappe.desk.doctype.event.event.has_permission",
+    "Airline": "airplane_mode.airplane_mode.doctype.airline.permission.airline_perm.airline_has_permission",
+}
 
 # Document Events
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	# "*": {
+	# 	"on_update": "method",
+	# 	"on_cancel": "method",
+	# 	"on_trash": "method"
+	# }
+    "Knowledge Article": {
+        "on_update": "airplane_mode.airplane_mode.doctype.knowledge_article.search.knowledge_article_indexing.queue_article_update",
+        "on_trash": "airplane_mode.airplane_mode.doctype.knowledge_article.search.knowledge_article_indexing.queue_article_removal",
+    }
+}
 
 # Scheduled Tasks
 # ---------------
@@ -263,3 +269,12 @@ website_route_rules = [
 
 # Website 404
 website_catch_all = "not_found"
+
+
+# Fixtures
+fixtures = [
+    # export all records from the Airline table
+    "Airline",
+    # export only those records that match the filters from Airplane table
+    {"dt": "Airplane", "filters": [["name", "like", "PhnomPenh%"]]},
+]

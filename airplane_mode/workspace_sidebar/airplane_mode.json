@@ -1,0 +1,77 @@
+{
+ "app": "airplane_mode",
+ "creation": "2026-08-05 18:39:35.991678",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "header_icon": "plane",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "plane",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Airline",
+   "link_to": "Airline",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "plane-landing",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Airplane",
+   "link_to": "Airplane",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "plane-takeoff",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Airport",
+   "link_to": "Airport",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "person-standing",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Passenger",
+   "link_to": "Flight Passenger",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "tickets-plane",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Ticket",
+   "link_to": "Airplane Ticket",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-08-05 18:44:08.631630",
+ "modified_by": "Administrator",
+ "module": "airplane_mode",
+ "name": "airplane_mode",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "airplane_mode"
+}
