@@ -22,7 +22,9 @@ class Airline(Document):
 		pass
 
 	def before_save(self):
-		# print("executing before_save for Airline")
+		print("="*20)
+		print("executing before_save for Airline")
+		print("="*20)
 		# self.send_alert_airline()
 		pass
 

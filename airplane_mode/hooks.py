@@ -143,6 +143,9 @@ doc_events = {
     "Knowledge Article": {
         "on_update": "airplane_mode.airplane_mode.doctype.knowledge_article.search.knowledge_article_indexing.queue_article_update",
         "on_trash": "airplane_mode.airplane_mode.doctype.knowledge_article.search.knowledge_article_indexing.queue_article_removal",
+    },
+    "Airline": {
+        "before_save": "airplane_mode.airplane_mode.custom.airline.airline_service.post_airline",
     }
 }
 
